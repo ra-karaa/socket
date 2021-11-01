@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    auth()->login(App\Models\User::first());
-
     return view('welcome');
 });
 
